@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <title>Pokédex de Digimon</title>
 </head>
 <body>
     <div class="container">
-        <h1>Pokédex de Digimon</h1>
-        <input type="text" id="digimonName" placeholder="Digite o nome do Digimon">
-        <button id="searchButton">Pesquisar</button>
+        <h1 class="title">Pokédex de Digimon</h1>
+        <div class="search-container">
+            <input type="text" id="digimonName" placeholder="Digite o nome do Digimon">
+            <button id="searchButton">Pesquisar</button>
+        </div>
         <div id="result" class="result"></div>
+        <div class="navigation">
+            <button id="prevButton">Anterior</button>
+            <button id="nextButton">Próximo</button>
+        </div>
     </div>
     <script src="js/scripts.js"></script>
 </body>
